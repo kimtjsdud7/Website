@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> PhoneCase </title>
+	<meta charset ="utf-8">
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+		<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    	<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+		<link rel="stylesheet" href="/resources/demos/style.css" />
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: main; }
+.item3 { grid-area: footer; 
+		 background-color: #ad84b2;}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main main main main'
+    'footer footer footer footer footer footer';
+  grid-gap: 0px;
+  background-color: #ffced3;
+  padding: 0px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 0px 0;
+  font-size: 15px;
+}
+.infofont {
+	font-size: 20px;
+	}
+.draggable { 
+width: 50px; 
+padding: 0.5em;
+}	
+.top-middle {
+  position: relative;
+  
+
+}
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="item1">
+  <!-- Hyperlinks -->
+ <p align="right"> 
+	<a href="Home2.html"><img border="0" data-original-height="31" data-original-width="57" src="https://2.bp.blogspot.com/-A9A576FtvR0/WkxjBa1ww6I/AAAAAAAAn30/bcw_VT_v4bwIs6TAo4l2Gk_kl2IswloqQCLcBGAs/s1600/smallhomebutton.png" /></a> &nbsp;											<!--home hyperlink-->
+	<a href="Login.html"><img border="0" data-original-height="31" data-original-width="127" src="https://4.bp.blogspot.com/-ndo4QUhSh6o/WkxkPYDIRLI/AAAAAAAAn4I/GKxflS3PzM4I-VJ-SayehGUG63ZaVOtPACLcBGAs/s1600/myaccountbutton.png" /></a>	&nbsp;								<!--myaccount hyperlink-->
+	<a href="register.html"><img border="0" data-original-height="27" data-original-width="102" src="https://3.bp.blogspot.com/-gE0ifFAlwLc/Wkxl8ihGhsI/AAAAAAAAn4g/un_a3gHHe10HqaXbkGtb-oB6IfRVekrVwCLcBGAs/s1600/registerbutton.png" /></a> &nbsp;									<!--register hyperlink-->
+	<a href="cart.html"><img border="0" data-original-height="28" data-original-width="50" src="https://2.bp.blogspot.com/-qseOWxNXIWg/Wkxk-5V6aYI/AAAAAAAAn4U/aVDNhYFfMzw9dtX1ZjREmLW622MpK3AiQCLcBGAs/s1600/cartbutton.png" /></a> &nbsp; &nbsp;									<!--cart hyperlink-->
+</p>	
+
+<div class="header" style="clear: both; text-align: center;">
+<a href="Home2.html" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="83" data-original-width="240" src="https://4.bp.blogspot.com/-XovoiciMkoM/Wkxd5uitK1I/AAAAAAAAn3E/YObHkwG__A8wVZp4FW8AX1V-NQ4PmwBeQCLcBGAs/s1600/newhomebutton.png" /></a></div>
+<br />						<!--LOGO-->
+
+<p align="right"> 
+
+PHONE:
+<select>
+	<option>All</option>
+	<option>iPhone 7</option>
+	<option>iPhone 7 Plus</option>
+	<option>iPhone 8</option>
+	<option>iPhone 8 Plus</option>
+
+</select>
+
+&nbsp; &nbsp;
+CHARACTER TYPE:
+<select>
+	<option>All</option>
+	<option>IRONMAN</option>
+	<option>SPIDERMAN</option>
+	<option>THOR</option>
+	<option>HURK</option>
+
+</select>
+
+&nbsp; &nbsp;
+SORT:
+<select>
+	<option>Featured</option>
+	<option>Best Selling</option>
+	<option>Price, low to high</option>
+	<option>Price, high to low</option>
+</select>
+
+</p>
+</div>
+
+  <!-- Main -->     
+  <div class="item2">
+	<table align="center">
+  <tr>
+	<td><div id="draggable" class="ui-widget-content draggable"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnrWY4ZiURQo-lS5uLd1wa0R60LxXsKraDco6upl7YgXQi-zNk" width="30"></div></td>
+	<td  rowspan="4"><img class="top-middle" src="D:\Illustrator\Practice\emptycase.png" width="350"></td>
+	<td><div id="draggable" class="ui-widget-content draggable"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnrWY4ZiURQo-lS5uLd1wa0R60LxXsKraDco6upl7YgXQi-zNk" width="30"></div>
+	</td>
+  </tr>
+   <tr>
+	<td><div id="draggable" class="ui-widget-content draggable"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnrWY4ZiURQo-lS5uLd1wa0R60LxXsKraDco6upl7YgXQi-zNk" width="30"></div></td>
+ 	<td>
+	<div id="draggable" class="ui-widget-content draggable">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnrWY4ZiURQo-lS5uLd1wa0R60LxXsKraDco6upl7YgXQi-zNk" width="30">
+	</div>
+	</td>
+  </tr>
+   <tr>
+	<td><div id="draggable" class="ui-widget-content draggable"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnrWY4ZiURQo-lS5uLd1wa0R60LxXsKraDco6upl7YgXQi-zNk" width="30"></div></td>
+	<td>
+	<div id="draggable" class="ui-widget-content draggable">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnrWY4ZiURQo-lS5uLd1wa0R60LxXsKraDco6upl7YgXQi-zNk" width="30">
+	</div>
+	</td>
+  </tr>
+   <tr>
+	<td><div id="draggable" class="ui-widget-content draggable"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnrWY4ZiURQo-lS5uLd1wa0R60LxXsKraDco6upl7YgXQi-zNk" width="30"></div></td>
+	<td>
+	<div id="draggable" class="ui-widget-content draggable">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnrWY4ZiURQo-lS5uLd1wa0R60LxXsKraDco6upl7YgXQi-zNk" width="30">
+	</div>
+	</td>
+  </tr>
+
+  </table>
+<script>
+$(function() {
+    $( ".draggable" ).draggable();
+});
+</script>
+</div>
+
+  <!-- Footer -->
+  <div class="item3">
+	<div align="left"><p class="infofont">Information</p></div>
+	<div align="left"><a href = "Privacypolicy.html">Privacy policy</a></div>
+  </div>
+</div>
+
+</body>
+</html>
